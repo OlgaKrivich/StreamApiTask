@@ -2,8 +2,6 @@ package task2;
 
 import java.util.HashMap;
 import java.util.Map;
-import java.util.Map.Entry;
-import java.util.stream.Collectors;
 
 public class SubTask2 {
 
@@ -13,10 +11,7 @@ public class SubTask2 {
         mapWithBook.put(book1, "Library1");
         Book book2 = new Book("myBook", 5);
 
-        mapWithBook.entrySet().stream().map(Entry::getValue).collect(
-                Collectors.toList()).forEach(System.out::println);
-
-
+        System.out.println(mapWithBook.get(book2));
     }
 
 }

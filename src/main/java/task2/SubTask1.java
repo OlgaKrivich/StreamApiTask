@@ -51,8 +51,7 @@ public class SubTask1 {
 
         System.out.println();
         System.out.println("Sort books by name in desc order, if name equals then sort by price");
-        bookList.stream().sorted(Comparator.comparing(Book::getName).reversed()
+        bookList.stream().sorted((Comparator.comparing(Book::getName).reversed())
                 .thenComparing(Book::getPrice)).forEach(System.out::println);
-
     }
 }
